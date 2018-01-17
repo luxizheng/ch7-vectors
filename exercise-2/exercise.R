@@ -23,7 +23,7 @@ even <- seq(2, 100, 2)
 
 # Using the `all()` function and `%%` (modulo) operator, confirm that all of the
 # numbers in your `even` vector are even
-all(even%%2 == 0)
+all(even %% 2 == 0)
 
 # Create a vector `phone.numbers` that contains the numbers 8,6,7,5,3,0,9
 phone.numbers <- c(8,6,7,5,3,0,9)
@@ -43,4 +43,4 @@ large <- phone.numbers[phone.numbers > 5]
 phone.numbers[phone.numbers > 5] <- 5
 
 # Replace every odd-numbered value in `phone.numbers` with the number 0
-phone.numbers[phone.numbers %% 2 == 1] <- 0
+phone.numbers[c(TRUE, FALSE)] <- 0
